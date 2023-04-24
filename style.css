@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap");
 
 /* Center the container */
 .container {
@@ -8,26 +8,15 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  background: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   animation: gradient 15s ease infinite;
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto mono", Helvetica, Arial, sans-serif;
   color: white;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
 /* Style the header */
@@ -51,6 +40,9 @@ h1 {
   margin-top: 30px;
 }
 
+#error {
+  color: red;
+}
 /* Media queries for responsiveness */
 @media (max-width: 576px) {
   h1 {
