@@ -45,8 +45,8 @@ h1 {
 }
 
 #error {
-  color: red;
-  font-weight: 700;
+  
+  font-weight: 400;
 }
 /* Media queries for responsiveness */
 @media (max-width: 576px) {
