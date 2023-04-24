@@ -21,7 +21,21 @@ window.onload = function () {
         const icon = data.current.condition.icon;
         const feelslike = data.current.feelslike_c;
         // Create a string with the weather data
-        const weatherData = `
+        if (
+          query == "" ||
+          query == null ||
+          query == undefined ||
+          query == " " ||
+          query != city ||
+          query != country
+        ) {
+          const errorMessage = `
+                <div class="alert alert-danger" role="alert">
+                    Error: ${error.message}
+                </div>
+                `;
+        } else {
+          const weatherData = `
               <h2>${city}, ${country}</h2>
               <p>Temperature: ${temperature}°C</p>
               <p>Condition: ${condition}</p>
@@ -30,7 +44,7 @@ window.onload = function () {
                 <p>Feels like: ${feelslike}°C</p>
             
             `;
-
+        }
         // Set the weather data in the weather data element
         document.getElementById("weather-data").innerHTML = weatherData;
       })
