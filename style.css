@@ -23,15 +23,19 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 /* Style the search bar */
 #search-input {
+  margin: 10px;
   border-radius: 10px;
 }
 
 /* Style the search button */
 #search-button {
+  margin: 10px;
   border-radius: 10px;
 }
 
@@ -42,6 +46,7 @@ h1 {
 
 #error {
   color: red;
+  font-weight: 700;
 }
 /* Media queries for responsiveness */
 @media (max-width: 576px) {
