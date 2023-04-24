@@ -29,10 +29,8 @@ window.onload = function () {
           query != city ||
           query != country
         ) {
-          const errorMessage = `
-                <div class="alert alert-danger" role="alert">
-                    Error: ${error.message}
-                </div>
+          const weatherData = `
+                <h2>Enter a valid city or country</h2>
                 `;
         } else {
           const weatherData = `
