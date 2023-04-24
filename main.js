@@ -37,10 +37,10 @@ window.onload = function () {
       })
       .catch((error) => {
         // Display an error message if there was an error fetching the data
-        
-         const errorMessage = `
-         <h2 id = "error">Enter a valid City or Country</h2>
-             `;
+
+        const errorMessage = `
+         <h2 id = "error">Enter a valid City or Country !!</h2>
+        `;
 
         // Set the error message in the weather data element
         document.getElementById("weather-data").innerHTML = errorMessage;
